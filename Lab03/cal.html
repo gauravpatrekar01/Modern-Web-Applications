@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css" />
+  </head>
+  <body>
+    <div id="container">
+    <div id="card">
+        <h1>Calculator App</h1>
+        <p>Designed by <a href="https://github.com/gauravpatrekar01">Gaurav Patrekar</a></p>
+      <div>
+        <input type="text" id="nums" placeholder="Enter the Numbers" />
+      </div>
+      <div class="btns">
+        <button id="add" class="num-btn" onclick="btnAdd()">+</button>
+        <button id="sub" class="num-btn" onclick="btnSub()">-</button>
+        <button id="Equal" class="num-btn" onclick="btnEqual()">=</button>
+        <br />
+        <button class="num-btn" onclick="appendNum('1')">1</button>
+        <button class="num-btn" onclick="appendNum('2')">2</button>
+        <button class="num-btn" onclick="appendNum('3')">3</button>
+        <br />
+        <button class="num-btn" onclick="appendNum('4')">4</button>
+        <button class="num-btn" onclick="appendNum('5')">5</button>
+        <button class="num-btn" onclick="appendNum('6')">6</button>
+        <br />
+        <button class="num-btn" onclick="appendNum('7')">7</button>
+        <button class="num-btn" onclick="appendNum('8')">8</button>
+        <button class="num-btn" onclick="appendNum('9')">9</button>
+        <br />
+        <button class="num-btn" onclick="appendNum('0')">0</button>
+        <button class="num-btn" onclick="btn00()">00</button>
+        <button id="clear" class="num-btn" onclick="clearInput()">C</button>
+      </div>
+    </div>
+    <script src="cal.js"></script>
+  </body>
+</html>
