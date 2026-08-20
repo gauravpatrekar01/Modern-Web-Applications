@@ -5,7 +5,7 @@ body {
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(149deg,#ff0318,#0909af);
+    background:linear-gradient(149deg,#03cdff,#09af4e);
 }
 #container{
     width:340px;
