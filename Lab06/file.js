@@ -6,11 +6,19 @@ function arrPush(element) {
 }
 
 function arrPop() {
+    if (arr.length === 0) {
+        alert("Stack is empty. Cannot pop.");
+        return;
+    }
     arr.pop();
     updateResult();
 }
 
 function arrShift() {
+    if (arr.length === 0) {
+        alert("Stack is empty. Cannot shift.");
+        return;
+    }
     arr.shift();
     updateResult();
 }
