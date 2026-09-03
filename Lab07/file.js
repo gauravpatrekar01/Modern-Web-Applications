@@ -1,5 +1,5 @@
 async function abc() {
-    alert("Hello World");
+    document.getElementById("result").innerHTML = "<p>Program is running, please wait for 2 seconds...</p>";
     let op = new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve("Promise resolved after 2 seconds");
@@ -7,7 +7,12 @@ async function abc() {
     
     })
     let data = await op.then(function (data) {
-        alert(data);
+       // alert(data);
+        displayData(data)
     });
-    alert("End of function");
+    // document.getElementById("result").innerHTML = "<p>End of function</p>";
+}
+
+const displayData = (data) => {
+    document.getElementById("result").innerHTML = "<p>resolve: " + data + "</p>";
 }
