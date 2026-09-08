@@ -10,7 +10,6 @@ async function abc() {
        // alert(data);
         displayData(data)
     });
-    // document.getElementById("result").innerHTML = "<p>End of function</p>";
 }
 
 const displayData = (data) => {
